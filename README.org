@@ -17,8 +17,9 @@
   git version 2fa03b6214691529875d59d80407e846652e13fe
       gives me 3e1241819ab6d1a7f6669a9e78ccf059
 
-- [ ] Adding comments/spurious etc does not change.
+- [X] Adding comments/spurious etc does not change.
+
+  For example git version 96a0b230df6f1a5f3508e1604381860c7d394ce8
+  continues to give me the output 3e1241819ab6d1a7f6669a9e78ccf059
 
 - [ ] On different architectures gives same value
-
-** TODO Unrelated changes
