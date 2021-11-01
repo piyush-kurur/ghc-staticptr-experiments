@@ -1,0 +1,24 @@
+* How stoic is static pointers ?
+
+  We want to know under what condition static pointers remain the
+  same. In this repository we have a simple executable that prints a
+  static pointer. We would like to know in what contexts the value of
+  the static pointer changes.
+
+  With each change, we mention what is the output for a given run of
+  the executable.
+
+** TODO Assuming the source does not change
+
+   We assume that the source is exactly the same.
+
+- [X] Multiple compilation does not change static ptrs
+
+  git version 2fa03b6214691529875d59d80407e846652e13fe
+      gives me 3e1241819ab6d1a7f6669a9e78ccf059
+
+- [ ] Adding comments/spurious etc does not change.
+
+- [ ] On different architectures gives same value
+
+** TODO Unrelated changes
