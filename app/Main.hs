@@ -9,7 +9,7 @@ optr = static "hello"
 
 -- | This is the pointer that we print out.
 sptr :: StaticPtr Int
-sptr = static 42
+sptr = static 43
 
 
 main :: IO ()
