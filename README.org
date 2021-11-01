@@ -8,18 +8,20 @@
   With each change, we mention what is the output for a given run of
   the executable.
 
-** TODO Assuming the source does not change
+** What does not change the StaticPtr ?
 
-   We assume that the source is exactly the same.
 
-- [X] Multiple compilation does not change static ptrs
+   The output of program is 3e1241819ab6d1a7f6669a9e78ccf059 after the following
+   changes (commit hashes given).
 
-  git version 2fa03b6214691529875d59d80407e846652e13fe
-      gives me 3e1241819ab6d1a7f6669a9e78ccf059
-
-- [X] Adding comments/spurious etc does not change.
-
-  For example git version 96a0b230df6f1a5f3508e1604381860c7d394ce8
-  continues to give me the output 3e1241819ab6d1a7f6669a9e78ccf059
-
-- [ ] On different architectures gives same value
+   | Git Commit                               | comment                         |
+   |------------------------------------------+---------------------------------|
+   | 2fa03b6214691529875d59d80407e846652e13fe | Initial                         |
+   |------------------------------------------+---------------------------------|
+   | 96a0b230df6f1a5f3508e1604381860c7d394ce8 | Spaces and comments             |
+   |------------------------------------------+---------------------------------|
+   | 765d0d7df32a3ffc96d143fd9d8c45cc1c7989fe | additional unrelated definition |
+   |------------------------------------------+---------------------------------|
+   | 2d26e1a4ae3580d3286054196a623999f930352a | Change in the value             |
+   |                                          | associated with the static ptr  |
+   |------------------------------------------+---------------------------------|
